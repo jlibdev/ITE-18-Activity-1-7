@@ -106,6 +106,7 @@ window.addEventListener('dblclick', ()=>{
     }
 })
 const controls = new OrbitControls(camera, canvas)
+controls.enableDamping = true 
 
 const tick = () =>{
     controls.update()
